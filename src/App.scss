@@ -1,0 +1,49 @@
+.App {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 1s;
+
+  .QuoteBox {
+    background-color: whitesmoke;
+    width: 40vw;
+    padding: 30px;
+    border-radius: 5px;
+
+    .Author {
+      width: 100%;
+      float: right;
+      text-align: right;
+      margin-top: 20px;
+      transition: opacity 0.7s;
+    }
+
+    h1 {
+      transition: opacity 0.7s;
+      svg {
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+    }
+
+    .ButtonsDiv {
+      margin-top: 50px;
+      button {
+        color: white;
+        transition: background-color 0.7s;
+        border-width: 0px;
+        border-radius: 7px;
+        padding: 10px 25px;
+        font-size: 18px;
+        margin: 5px;
+        cursor: pointer;
+        &:nth-child(3) {
+          float: right
+        }
+      }
+
+    }
+  }
+}
